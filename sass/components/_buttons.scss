@@ -1,0 +1,54 @@
+.button {
+  min-width: 8.5em;
+  min-height: 3em;
+  border-radius: 15em;
+  padding: 0 0;
+}
+
+.btn-sign-up {
+  background: linear-gradient(90deg, $veryLightRed, $lightRed);
+  font-weight: bold;
+  transition: background-color 0.5s, color 0.8s;
+  &:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: $white;
+  }
+  a {
+    color: $white;
+  }
+
+  @media (min-width: 992px) {
+    background: $white;
+    margin-left: 1em;
+    a {
+      color: $lightRed;
+    }
+  }
+}
+
+.btn-start-for-free {
+  margin-right: 1rem;
+  border-radius: 30px;
+  font-weight: bold;
+  background: $white;
+  color: $veryLightRed;
+  border: none;
+  transition: background-color 0.5s, color 0.8s;
+  &:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: $white;
+  }
+}
+
+.btn-learn-more {
+  background: none;
+  border: 1.5px solid $white;
+  color: $white;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.5s, color 0.8s;
+  &:hover {
+    background-color: $white;
+    color: $veryLightRed;
+  }
+}

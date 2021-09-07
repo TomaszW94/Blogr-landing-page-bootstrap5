@@ -1,0 +1,420 @@
+/* Primary colors */
+/* (CTA hover background) */
+/* (headings) */
+/* Neutral */
+/* (text) */
+/* (footer text) */
+/* (body copy) */
+/* (footer background) */
+.button {
+  min-width: 8.5em;
+  min-height: 3em;
+  border-radius: 15em;
+  padding: 0 0;
+}
+
+.btn-sign-up {
+  background: -webkit-gradient(linear, left top, right top, from(#ff7a85), to(#ff525d));
+  background: linear-gradient(90deg, #ff7a85, #ff525d);
+  font-weight: bold;
+  -webkit-transition: background-color 0.5s, color 0.8s;
+  transition: background-color 0.5s, color 0.8s;
+}
+
+.btn-sign-up:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.btn-sign-up a {
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .btn-sign-up {
+    background: white;
+    margin-left: 1em;
+  }
+  .btn-sign-up a {
+    color: #ff525d;
+  }
+}
+
+.btn-start-for-free {
+  margin-right: 1rem;
+  border-radius: 30px;
+  font-weight: bold;
+  background: white;
+  color: #ff7a85;
+  border: none;
+  -webkit-transition: background-color 0.5s, color 0.8s;
+  transition: background-color 0.5s, color 0.8s;
+}
+
+.btn-start-for-free:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.btn-learn-more {
+  background: none;
+  border: 1.5px solid white;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  -webkit-transition: background-color 0.5s, color 0.8s;
+  transition: background-color 0.5s, color 0.8s;
+}
+
+.btn-learn-more:hover {
+  background-color: white;
+  color: #ff7a85;
+}
+
+.header {
+  background: url("../images/bg-pattern-intro.svg") no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff525d));
+  background: url("../images/bg-pattern-intro.svg") no-repeat, linear-gradient(#ff8f70, #ff525d);
+  border-bottom-left-radius: 6rem;
+  background-position: 30% 40%;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    background-position: 13% 52%;
+  }
+}
+
+.header__container {
+  color: white;
+  padding: 10em 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .header__container {
+    padding: 14em 0;
+  }
+}
+
+.header__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .header__title {
+    font-size: 3.5rem;
+  }
+}
+
+.header__text {
+  font-size: 1.2rem;
+}
+
+.navbar .dropdown-toggle::after {
+  content: url("");
+  display: none;
+}
+
+.dropdown-toggle.show > .navbar__nav-arrow-icon {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.navbar .container:not(.open) .nav-btn-close {
+  display: none;
+}
+
+.navbar .container.open .nav-btn {
+  display: none;
+}
+
+.navbar .container.open .nav-btn-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__menu-btn:focus, .navbar__menu-btn:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar__dropdown-menu {
+  background-color: #f7f7f8;
+  width: 15em;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .navbar__dropdown-menu {
+    width: 10em;
+    padding: 1em 0;
+    -webkit-box-shadow: 1px 0px 10px -3px #78787b;
+            box-shadow: 1px 0px 10px -3px #78787b;
+  }
+}
+
+.navbar__dropdown-item {
+  color: #1f3f5b;
+  -webkit-transition: font-weight 0.1s;
+  transition: font-weight 0.1s;
+}
+
+@media (min-width: 992px) {
+  .navbar__dropdown-item {
+    margin-left: 0.5em;
+  }
+}
+
+.navbar__dropdown-item:hover {
+  font-weight: bold;
+  background: transparent;
+}
+
+.navbar__list-items {
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media (min-width: 992px) {
+  .navbar__list-items {
+    background-color: transparent;
+  }
+}
+
+.navbar__nav-link:focus, .navbar__nav-link:hover {
+  color: #1f3f5b;
+}
+
+.navbar__nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .navbar__nav-link, .navbar__nav-link:focus, .navbar__nav-link:hover {
+    color: white;
+  }
+}
+
+.navbar__nav-arrow-icon {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  margin-left: 0.3rem;
+}
+
+.navbar__line {
+  width: 100%;
+  height: 1px;
+  background-color: #c8c8cb;
+  margin: 0.5em 0;
+}
+
+@media (min-width: 992px) {
+  .navbar__line {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: #25252d;
+  font-family: "Ubuntu", sans-serif;
+  border-top-right-radius: 6em;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__list-title {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__list-link:hover, .footer__list-link:visited, .footer__list-link:link {
+  color: #c8c8cb;
+}
+
+.footer__list-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.footer__list-link::before {
+  content: "";
+  display: block;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 110%;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  background-color: #c8c8cb;
+  -webkit-transition: height 0.1s;
+  transition: height 0.1s;
+}
+
+.footer__list-link:hover::before {
+  height: 1px;
+}
+
+.section {
+  padding: 1em 0;
+}
+
+.mbc {
+  margin-bottom: 9em;
+}
+
+.section-title {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: #1f3f5b;
+  font-size: 1.7rem;
+  margin: 1.6em 0 1em 0;
+}
+
+.section-text {
+  color: #4b5862;
+  font-size: 1.1rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+}
+
+.designed-for-the-future {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .designed-for-the-future__title {
+    font-size: 2.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .designed-for-the-future__img-container {
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 992px) {
+  .designed-for-the-future__img-container {
+    right: -16em;
+  }
+}
+
+@media (min-width: 992px) {
+  .designed-for-the-future .img-fluid {
+    max-width: 40em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .designed-for-the-future .img-fluid {
+    max-width: 50em;
+  }
+}
+
+.state-of-the-art-infrastructure {
+  position: relative;
+  background: url("./images/bg-pattern-circles.svg") no-repeat, -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+  background: url("./images/bg-pattern-circles.svg") no-repeat, linear-gradient(#2c2d3f, #3f4164);
+  background-position: 50% -50%;
+  background-size: 100%;
+  border-top-right-radius: 8em;
+}
+
+@media (min-width: 992px) {
+  .state-of-the-art-infrastructure {
+    background-position: -80% 80%;
+    background-size: 73%;
+  }
+}
+
+.state-of-the-art-infrastructure__title, .state-of-the-art-infrastructure__text {
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .state-of-the-art-infrastructure__title {
+    font-size: 2.2rem;
+  }
+}
+
+.state-of-the-art-infrastructure__img-col {
+  margin-top: -11em;
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .state-of-the-art-infrastructure__img-col {
+    margin-top: -8em;
+  }
+}
+
+.s-open-source {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .s-open-source__img-container {
+    position: absolute;
+    left: -8em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 992px) {
+  .s-open-source__img-container {
+    right: -17em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .s-open-source__img-container {
+    left: -19em;
+  }
+}
+
+@media (min-width: 768px) {
+  .s-open-source .img-fluid {
+    max-width: 40em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .s-open-source .img-fluid {
+    max-width: 50em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,40 @@
+.footer {
+  background-color: $veryDarkBlackBlue;
+  font-family: "Ubuntu", sans-serif;
+  border-top-right-radius: 6em;
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+  &__list-title {
+    color: $white;
+    font-size: 1.2rem;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__list-link:hover,
+  &__list-link:visited,
+  &__list-link:link {
+    color: $grayishBlue;
+  }
+  &__list-link {
+    text-decoration: none;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      height: 0px;
+      width: 100%;
+      position: absolute;
+      top: 110%;
+      right: 50%;
+      transform: translateX(50%);
+      background-color: $grayishBlue;
+      transition: height 0.1s;
+    }
+    &:hover::before {
+      height: 1px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.header {
+  background: url("../images/bg-pattern-intro.svg") no-repeat,
+    linear-gradient($veryLightOrange, $lightRed);
+  border-bottom-left-radius: 6rem;
+  background-position: 30% 40%;
+  @media (min-width: 1200px) {
+    background-position: 13% 52%;
+  }
+  &__container {
+    color: $white;
+    padding: 10em 0;
+    margin: 0 auto;
+    @media (min-width: 992px) {
+      padding: 14em 0;
+    }
+  }
+  &__title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    @media (min-width: 992px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+  }
+}

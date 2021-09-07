@@ -1,0 +1,97 @@
+.navbar {
+  .dropdown-toggle::after {
+    content: url("");
+    display: none;
+  }
+
+  .dropdown-toggle.show > &__nav-arrow-icon {
+    transform: rotate(-180deg);
+  }
+
+  .container:not(.open) .nav-btn-close {
+    display: none;
+  }
+
+  .container.open .nav-btn {
+    display: none;
+  }
+
+  .container.open .nav-btn-close {
+    display: flex;
+  }
+
+  &__menu-btn:focus,
+  &__menu-btn:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &__dropdown-menu {
+    background-color: hsl(240, 3%, 97%);
+    width: 15em;
+    font-family: "Ubuntu", sans-serif;
+    border: none;
+    @media (min-width: 992px) {
+      width: 10em;
+      padding: 1em 0;
+      box-shadow: 1px 0px 10px -3px rgba(120, 120, 123, 1);
+    }
+  }
+  &__dropdown-item {
+    color: $veryDarkBlue;
+    transition: font-weight 0.1s;
+    @media (min-width: 992px) {
+      margin-left: 0.5em;
+    }
+    &:hover {
+      font-weight: bold;
+      background: transparent;
+    }
+  }
+  &__list-items {
+    background-color: $white;
+    text-align: center;
+    border-radius: 5px;
+
+    @media (min-width: 992px) {
+      background-color: transparent;
+    }
+  }
+
+  &__nav-link:focus,
+  &__nav-link:hover {
+    color: $veryDarkBlue;
+  }
+
+  &__nav-link {
+    display: flex;
+    align-items: center;
+    color: $veryDarkBlue;
+    font-family: "Overpass", sans-serif;
+    font-weight: 700;
+
+    @media (min-width: 992px) {
+      &,
+      &:focus,
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__nav-arrow-icon {
+    transition: transform 0.3s ease;
+    margin-left: 0.3rem;
+  }
+
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: $grayishBlue;
+    margin: 0.5em 0;
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+}
